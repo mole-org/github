@@ -1,0 +1,12 @@
+name:
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo $GITHUB_REF_NAME
